@@ -1,0 +1,174 @@
+body{
+/*    margin: 0;*/
+}
+
+.window{
+    width: 500px;
+    border: 1px solid #329cd9;
+    background-color: #3bb7ff;
+    font-family: "Open Sans";
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.window-head{
+    line-height: 29px;
+    height: 29px;
+    font-size: 0;
+    position: relative;
+     color: white;
+    
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.window-head .controls{
+    position: absolute;
+    top: 0;
+    right: 6;
+}
+
+.window-head .icon{
+    width: 15px;
+    height: 15px;    
+    background: url(graphics/icon.png) no-repeat;
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.window-head .title{
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    font-size: 11pt;
+}
+
+.window-body{
+    background-color: white;
+    margin: 0 6px 6px 6px;
+    border: 1px solid #329cd9;
+}
+
+.window-body p{    
+    padding-left: 10px;
+}
+
+.window-body img{
+    width: 100%;
+		padding: 1em;
+		box-sizing: border-box;
+}
+
+.window-head .minimize{
+    position: relative;
+    outline: none;
+    width: 26px;
+    border: none;
+    height: 20px;
+    background-color: rgba(199, 80, 80, 0);
+    color: white;
+}
+
+.window-head .minimize:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 6px;
+    background-image: url(graphics/button-min.png);
+    background-repeat: no-repeat;
+}
+
+.window-head .minimize:hover:after{
+    background-position: -10px 0px;
+}
+
+.window-head .minimize:hover{
+    background-color: #3665b3;
+}
+
+.window-head .minimize:active{
+    background-color: #3d6099;
+}
+
+.window-head .maximize{
+    position: relative;
+    outline: none;
+    width: 26px;
+    border: none;
+    height: 20px;
+    background-color: rgba(199, 80, 80, 0);
+    color: white;
+}
+
+.window-head .maximize:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 6px;
+    background-image: url(graphics/button-max.png);
+    background-repeat: no-repeat;
+}
+
+.window-head .maximize:hover:after{
+    background-position: -10px 0px;
+}
+
+.window-head .maximize:hover{
+    background-color: #3665b3;
+}
+
+.window-head .maximize:active{
+    background-color: #3d6099;
+}
+
+.window-head .close{
+    position: relative;
+    outline: none;
+    width: 45px;
+    border: none;
+    height: 20px;
+    background-color: #c75050;
+    color: white;
+}
+
+.window-head .close:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 6px;
+    background-image: url(graphics/button-close.png);
+    background-repeat: no-repeat;
+}
+
+.window-head .close:hover:after{
+    background-position: -10px 0px;
+}
+
+.window-head .close:hover{
+    background-color: #e04343;
+}
+
+.window-head .close:active{
+    background-color: #993d3d;
+}
